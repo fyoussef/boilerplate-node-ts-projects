@@ -26,6 +26,6 @@
     "strict": true
     
   },
-  "include": ["src"]
+  "include": ["src", "tests"]
   // include all files TS inside folder SRC in build time
 }

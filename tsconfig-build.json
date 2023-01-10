@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json", // copy all config in this file
+  "exclude": ["tests"] // delete tests folder to not compile in /dist 
+}

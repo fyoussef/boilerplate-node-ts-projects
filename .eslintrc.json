@@ -1,0 +1,6 @@
+{
+  "extends": "standard-with-typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json" // directory where eslint will see code included by tsconfig
+  }
+}
