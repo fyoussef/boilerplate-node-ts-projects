@@ -8,9 +8,9 @@
     "lint": "npx eslint .",
     "lint:fix": "npm run lint -- --fix",
     "test": "jest --passWithNoTests --no-cache --runInBand",
-    "test:watch": "npm run test -- --watch",
-    "test:staged": "npm run test -- --findRelatedTests",
-    "test:coverage": "npm run test -- --coverage",
+    "test:watch": "npm test -- --watch",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:coverage": "npm test -- --coverage",
     "prepare": "husky install"
   },
   "keywords": [],
