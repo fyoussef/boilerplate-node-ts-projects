@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ES2022",
+    // https://node.green/ -> to see how ES s compatible with your node version
+    // https://www.typescriptlang.org/tsconfig#target -> to see de max es version supported by TS
+    "rootDir": "src",
+    "skipLibCheck": true,
+    // prevent any build process from making unnecessary checks on the node_module
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    // to make debug
+    "moduleResolution": "Node",
+    // to make import in folder with have index
+    "module": "CommonJS",
+    // this will transform typescript imports in require in transpiled files
+    "esModuleInterop": true,
+    // resolve compatibility in different modules (some lib willl use require other import...)
+
+    // paths
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"], // any file inside folder src will be available to this path,
+      "@/tests/*": ["../tests/*"]
+    }
+  },
+  "include": ["src"]
+  // include all files TS inside folder SRC in build time
+}
