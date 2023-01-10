@@ -21,8 +21,10 @@
     "baseUrl": "src",
     "paths": {
       "@/*": ["*"], // any file inside folder src will be available to this path,
-      "@/tests/*": ["../tests/*"]
-    }
+      "@/tests/*": ["../tests/*"],
+    },
+    "strict": true
+    
   },
   "include": ["src"]
   // include all files TS inside folder SRC in build time
